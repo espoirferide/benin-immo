@@ -11,8 +11,37 @@ export function Produits() {
           <a href="#parakou">  <Batt Ville="Parakou" /> </a>
           <a href="#calavi">  <Batt Ville="Calavi" /> </a>
         </div> 
-        <div id="cotonou" className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-           
+        <div id="cotonou" className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+           <Carte image="./header.png" Alte="villa" Titre="Villa à vendre à Cotonou" description="4 Chambres, 2 Salons et 1 Garage" Prix="Prix : 160.000.000 F CFA" />
+           <Carte image="./villa-cotonou.webp" Alte="villa" Titre="Villa à Louer à Cotonou" description="3 Chambres, 1 Salon et 1 Garage" Prix="Prix : 2.000.000 F CFA/Mois" />
+           <Carte image="./villa2.webp" Alte="chambre" Titre="Chambre à louer à Cotonou" description="3 Chambres, 1 Salon et 1 Garage" Prix="Prix : 1.300.000 F CFA/Mois" />
+           <Carte image="./villa3.webp" Alte="villa" Titre="Villa triplex à vendre à Cotonou" description="4 Chambres, 1 Salon et 1 Garage" Prix="Prix : 300.000.000 F CFA" />
+           <Carte image="./villa4.webp" Alte="villa" Titre="Villa duplex R+1 à vendre à Cotonou" description="3 Chambres, 1 Salons et 1 Garage" Prix="Prix : 70.000.000 F CFA" />
+           <Carte image="./villa5.webp" Alte="villa" Titre="Villa luxueuse à louer à Cotonou" description="6 Chambres, 1 Salon et 5 Garages plus piscine et Jardin" Prix="Prix : 2.500.000 F CFA" />
+        </div>
+        <div id="portonovo" className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+           <Carte image="./header.png" Alte="villa" Titre="Villa à vendre à Cotonou" description="4 Chambres, 2 Salons et 1 Garage" Prix="Prix : 160.000.000 F CFA" />
+           <Carte image="./villa-cotonou.webp" Alte="villa" Titre="Villa à Louer à Cotonou" description="3 Chambres, 1 Salon et 1 Garage" Prix="Prix : 2.000.000 F CFA/Mois" />
+           <Carte image="./villa2.webp" Alte="chambre" Titre="Chambre à louer à Cotonou" description="3 Chambres, 1 Salon et 1 Garage" Prix="Prix : 1.300.000 F CFA/Mois" />
+           <Carte image="./villa3.webp" Alte="villa" Titre="Villa triplex à vendre à Cotonou" description="4 Chambres, 1 Salon et 1 Garage" Prix="Prix : 300.000.000 F CFA" />
+           <Carte image="./villa4.webp" Alte="villa" Titre="Villa duplex R+1 à vendre à Cotonou" description="3 Chambres, 1 Salons et 1 Garage" Prix="Prix : 70.000.000 F CFA" />
+           <Carte image="./villa5.webp" Alte="villa" Titre="Villa luxueuse à louer à Cotonou" description="6 Chambres, 1 Salon et 5 Garages plus piscine et Jardin" Prix="Prix : 2.500.000 F CFA" />
+        </div>
+         <div id="parakou" className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+           <Carte image="./header.png" Alte="villa" Titre="Villa à vendre à Cotonou" description="4 Chambres, 2 Salons et 1 Garage" Prix="Prix : 160.000.000 F CFA" />
+           <Carte image="./villa-cotonou.webp" Alte="villa" Titre="Villa à Louer à Cotonou" description="3 Chambres, 1 Salon et 1 Garage" Prix="Prix : 2.000.000 F CFA/Mois" />
+           <Carte image="./villa2.webp" Alte="chambre" Titre="Chambre à louer à Cotonou" description="3 Chambres, 1 Salon et 1 Garage" Prix="Prix : 1.300.000 F CFA/Mois" />
+           <Carte image="./villa3.webp" Alte="villa" Titre="Villa triplex à vendre à Cotonou" description="4 Chambres, 1 Salon et 1 Garage" Prix="Prix : 300.000.000 F CFA" />
+           <Carte image="./villa4.webp" Alte="villa" Titre="Villa duplex R+1 à vendre à Cotonou" description="3 Chambres, 1 Salons et 1 Garage" Prix="Prix : 70.000.000 F CFA" />
+           <Carte image="./villa5.webp" Alte="villa" Titre="Villa luxueuse à louer à Cotonou" description="6 Chambres, 1 Salon et 5 Garages plus piscine et Jardin" Prix="Prix : 2.500.000 F CFA" />
+        </div>
+        <div id="calavi" className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+           <Carte image="./header.png" Alte="villa" Titre="Villa à vendre à Cotonou" description="4 Chambres, 2 Salons et 1 Garage" Prix="Prix : 160.000.000 F CFA" />
+           <Carte image="./villa-cotonou.webp" Alte="villa" Titre="Villa à Louer à Cotonou" description="3 Chambres, 1 Salon et 1 Garage" Prix="Prix : 2.000.000 F CFA/Mois" />
+           <Carte image="./villa2.webp" Alte="chambre" Titre="Chambre à louer à Cotonou" description="3 Chambres, 1 Salon et 1 Garage" Prix="Prix : 1.300.000 F CFA/Mois" />
+           <Carte image="./villa3.webp" Alte="villa" Titre="Villa triplex à vendre à Cotonou" description="4 Chambres, 1 Salon et 1 Garage" Prix="Prix : 300.000.000 F CFA" />
+           <Carte image="./villa4.webp" Alte="villa" Titre="Villa duplex R+1 à vendre à Cotonou" description="3 Chambres, 1 Salons et 1 Garage" Prix="Prix : 70.000.000 F CFA" />
+           <Carte image="./villa5.webp" Alte="villa" Titre="Villa luxueuse à louer à Cotonou" description="6 Chambres, 1 Salon et 5 Garages plus piscine et Jardin" Prix="Prix : 2.500.000 F CFA" />
         </div>
         </section>
     )
