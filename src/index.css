@@ -1,1 +1,158 @@
 @import "tailwindcss";
+
+:root{
+  --font-outfit: 'Outfit', sans-serif;  
+  --font-lobster: 'Lobster', cursive;
+  --font-space-grotesk: 'Space Grotesk', sans-serif;
+}
+@theme {
+
+ --font-outfit: 'Outfit', sans-serif;  
+  --font-lobster: 'Lobster', cursive;
+  --font-space-grotesk: 'Space Grotesk', sans-serif;
+}
+
+
+
+
+/* From Uiverse.io by SelfMadeSystem */ 
+.outline {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.rect {
+  stroke-dashoffset: 5;
+  stroke-dasharray: 0 0 10 40 10 40;
+  transition: 0.5s;
+  stroke: #fff;
+}
+
+.nav {
+  position: relative;
+  width: 300px;
+  height: 60px;
+}
+
+.container:hover .outline .rect {
+  transition: 999999s;
+  /* Must specify these values here as something *different* just so that the transition works properly */
+  stroke-dashoffset: 1;
+  stroke-dasharray: 0;
+}
+
+.container {
+  position: absolute;
+  inset: 0;
+  background: #bef6;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0;
+}
+
+.btn {
+  padding: 0.5em ;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+.btn:hover {
+  background: #fff3;
+}
+
+.btn:nth-child(1):hover ~ svg .rect {
+  stroke-dashoffset: 0;
+  stroke-dasharray: 0 2 8 73.3 8 10.7;
+}
+
+.btn:nth-child(2):hover ~ svg .rect {
+  stroke-dashoffset: 0;
+  stroke-dasharray: 0 12.6 9.5 49.3 9.5 31.6;
+}
+
+.btn:nth-child(3):hover ~ svg .rect {
+  stroke-dashoffset: 0;
+  stroke-dasharray: 0 24.5 8.5 27.5 8.5 55.5;
+}
+
+
+.btn:hover ~ .outline .rect {
+  stroke-dashoffset: 0;
+  stroke-dasharray: 0 0 10 40 10 40;
+  transition: 0.5s !important;
+}
+
+
+.button {
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  padding-block: 0.5rem;
+  padding-inline: 1.25rem;
+  background-color: rgb(0 107 179);
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffff;
+  gap: 10px;
+  font-weight: bold;
+  border: 3px solid #ffffff4d;
+  outline: none;
+  overflow: hidden;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+  transform: scale(1.05);
+  border-color: #fff9;
+}
+
+.button:hover .icon {
+  transform: translate(4px);
+}
+
+.button:hover::before {
+  animation: shine 1.5s ease-out infinite;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100%;
+  background-image: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 30%,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0) 70%
+  );
+  top: 0;
+  left: -100px;
+  opacity: 0.6;
+}
+
+@keyframes shine {
+  0% {
+    left: -100px;
+  }
+
+  60% {
+    left: 100%;
+  }
+
+  to {
+    left: 100%;
+  }
+}

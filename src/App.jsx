@@ -1,11 +1,15 @@
 import { useState } from 'react'
 import './App.css'
+import { Header } from './components/Header'
+import { Hero } from './components/Hero'
 
 function App() {
 
   return (
-   
-       <h1 className="text-3xl font-bold text-purple-600">Hello, Vite!</h1>      
+       <main>
+        <Header />
+        <Hero />  
+       </main>
             
   )
 }
