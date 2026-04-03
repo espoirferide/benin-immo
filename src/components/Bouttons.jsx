@@ -15,3 +15,16 @@ export function Boutton({identifiant, Texte}) {
         </a>
     )
 }
+
+export function Titre ({Texte}) {
+    return (
+      <h1 className="font-space-grotesk pl-3 md:pl-5 font-bold text-amber-300 md:text-4xl text-2xl">{Texte}</h1>
+       
+    )
+}
+
+export function Deux ({Texte}) {
+    return (
+<button className="bout w-fit pl-5"> <span>{Texte}</span>
+</button>
+    ) }
