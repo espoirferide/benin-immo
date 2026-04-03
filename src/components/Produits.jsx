@@ -2,14 +2,21 @@ import { Titre } from "./Bouttons"
 
 export function Produits() { 
     return( 
-        <section id="products" className="pt-10 flex justify-center items-center h-full w-full">
-            <Titre Texte="Nos Produits" />
-
-
-       
+        <section id="products" className="pt-10 pl-5  h-full w-full">
+        <Titre Texte="Nos Produits" />
+         <h1 className="font-medium text-xl">Dans quelle ville voulez vous votre bien immobilier ?</h1>
+         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-5">
+          <a href="#cotonou">  <Batt Ville="Cotonou" /> </a>
+          <a href="#portonovo">  <Batt Ville="Porto-Novo" /> </a>
+          <a href="#parakou">  <Batt Ville="Parakou" /> </a>
+          <a href="#calavi">  <Batt Ville="Calavi" /> </a>
+        </div> 
+        <div id="cotonou" className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+           
+        </div>
         </section>
     )
-}
+};
 
 
 export function Carte ({image, Alte,Titre, description, Prix}) {
@@ -25,5 +32,17 @@ export function Carte ({image, Alte,Titre, description, Prix}) {
         </div>
     </div>
 </div>
+    )
+}
+
+export function Batt ({Ville}){
+    return (
+       
+<button id="baton" className="learn-more">
+  <span className="circle" aria-hidden="true">
+  <span className="icon arrow"></span>
+  </span>
+  <span className="button-text">{Ville}</span>
+</button>
     )
 }

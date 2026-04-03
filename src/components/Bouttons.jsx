@@ -18,7 +18,7 @@ export function Boutton({identifiant, Texte}) {
 
 export function Titre ({Texte}) {
     return (
-      <h1 className="font-space-grotesk pl-3 md:pl-5 font-bold text-amber-300 md:text-4xl text-2xl">{Texte}</h1>
+      <h1 className="font-space-grotesk pl-3 md:pl-5 font-bold text-[#181BD2] md:text-4xl text-2xl">{Texte}</h1>
        
     )
 }

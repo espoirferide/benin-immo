@@ -2,7 +2,7 @@ import { Deux, Titre } from "./Bouttons";
 import TextType from '../TextType'
 export function About() {
     return ( 
-        <section id="about" className="bg-[#40d672] h-full w-full pt-5">
+        <section id="about" className=" h-full w-full pt-5">
             <Titre Texte="À propos Benin de Immo" />
             <article className="flex flex-col  lg:grid lg:grid-cols-2 lg:px-6 justify-center gap-2">
               <div className="flex flex-col pl-3 md:pl-5  pb-5">
